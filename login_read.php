@@ -27,21 +27,21 @@ if (!$result) {
 
 
 <body>
-   <div class="container">
-    <div class="col-sm-6">
-        <?php
-        while($row = mysqli_fetch_assoc($result)){
-            ?>
-            <pre>
+    <div class="container">
+        <div class="col-sm-6">
             <?php
-            print_r($row);
+            while ($row = mysqli_fetch_assoc($result)) {
+            ?>
+                <pre>
+            <?php
+                print_r($row);
             ?>
             </pre>
             <?php
-        }
-        ?>
+            }
+            ?>
+        </div>
     </div>
-   </div>
 </body>
 
 </html>

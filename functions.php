@@ -12,4 +12,3 @@ function showAllData(){
         echo "<option value='$id'>$id</option>";
     }
 }
-?>
