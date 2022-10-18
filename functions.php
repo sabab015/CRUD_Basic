@@ -30,4 +30,22 @@
             die("Query Failed" . mysqli_error($connection));
         }
     }
+
+    function deleteRows(){
+
+        global $connection;
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $id = $_POST['id'];
+
+        $query = "DELETE FROM users WHERE id = $id ";
+        // $query .= "username = '$username', ";
+        // $query .= "password = '$password' ";
+        // $query .= "WHERE id = $id ";
+
+        $result = mysqli_query($connection, $query);
+        if (!$result) {
+            die("Query Failed" . mysqli_error($connection));
+        }
+    }
 ?>
