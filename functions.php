@@ -20,10 +20,10 @@
         $password = $_POST['password'];
         $id = $_POST['id'];
 
-        $query = "UPDATE users SET ";
-        $query .= "username = '$username', ";
-        $query .= "password = '$password' ";
-        $query .= "WHERE id = $id ";
+        $query = "UPDATE users SET username = '$username', password = '$password' WHERE id = $id ";
+        // $query .= "username = '$username', ";
+        // $query .= "password = '$password' ";
+        // $query .= "WHERE id = $id ";
 
         $result = mysqli_query($connection, $query);
         if (!$result) {
