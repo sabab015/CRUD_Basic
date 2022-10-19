@@ -1,10 +1,4 @@
-<?php
-$connection = mysqli_connect('localhost', 'root', '', 'loginapp');
-if ($connection) {
-    echo "You are connected";
-} else {
-    die("Database Connection failed");
-}
+<?php include "db.php";
 
 $query = "SELECT * FROM users";
 $result = mysqli_query($connection, $query);

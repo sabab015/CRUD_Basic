@@ -1,12 +1,9 @@
 <?php include "db.php"; ?>
 <?php include "functions.php"; ?>
-
-
 <?php
 if (isset($_POST['submit'])) {
     deleteRows();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -31,18 +28,14 @@ if (isset($_POST['submit'])) {
                 <label for="password">Password</label>
                 <input type="password" name="password" class="form-control">
             </div>
-
             <div class="form-group">
                 <select name="id" id="">
                     <?php
                     showAllData();
                     ?>
-
                 </select>
-
             </div>
-
-            <input class="btn btn-primary" type="submit" name="submit" value="Update">
+            <input class="btn btn-primary" type="submit" name="submit" value="Delete">
         </form>
     </div>
 </body>
